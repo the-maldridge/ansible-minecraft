@@ -9,7 +9,7 @@ EssentialsSpawn_url: https://hub.spigotmc.org/jenkins/job/Spigot-Essentials/last
 WorldEdit_url: http://dev.bukkit.org/media/files/880/435/worldedit-bukkit-6.1.jar
 
 
-motd: "Minecraft Network"
+motd: "Now you are crafting with portals!"
 serverSubDir: p0rtalCraft
 
 servers:
@@ -31,6 +31,60 @@ servers:
     minMemory: 128M
     maxMemory: 256M
     instanceDir: lobby
+  survival:
+    allowEnd: true
+    allowNether: true
+    levelName: world
+    instanceQueryEnabled: false
+    instancePort: 25571
+    instanceSeed: 0
+    instanceGamemode: 0
+    instanceMOTD: Survival
+    spawnNPCs: true
+    spawnAnimals: true
+    spawnMonsters: true
+    maxPlayers: 15
+    pvpEnabled: true
+    xrayEnable: true
+    minMemory: 128M
+    maxMemory: 1G
+    instanceDir: survival
+  cakeIsSatan:
+    allowEnd: true
+    allowNether: true
+    levelName: world
+    instanceQueryEnabled: false
+    instancePort: 25572
+    instanceSeed: 0
+    instanceGamemode: 0
+    instanceMOTD: Closed World
+    spawnNPCs: true
+    spawnAnimals: true
+    spawnMonsters: true
+    maxPlayers: 15
+    pvpEnabled: true
+    xrayEnable: true
+    minMemory: 128M
+    maxMemory: 1G
+    instanceDir: cakeIsSatan
+  pillow:
+    allowEnd: false
+    allowNether: false
+    levelName: pillow
+    instanceQueryEnabled: false
+    instancePort: 25573
+    instanceSeed:
+    instanceGamemode: 2
+    instanceMOTD: Hub
+    spawnNPCs: false
+    spawnAnimals: false
+    spawnMonsters: false
+    maxPlayers: 15
+    pvpEnabled: false
+    xrayEnable: false
+    minMemory: 1G
+    maxMemory: 2G
+    instanceDir: pillow
 
 inspircd_links_minecraft_recvpass: "{{ lookup('file', 'secret/inspircd_links_minecraft_sendpass') }}"
 inspircd_links_minecraft_sendpass: "{{ lookup('file', 'secret/inspircd_links_minecraft_recvpass') }}"
